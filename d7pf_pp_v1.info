@@ -1,0 +1,12 @@
+name = d7pf_pp_v1
+description = Initial take on the PP, panel page and layout
+core = 7.x
+package = D7 Upgrade
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = panels
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = panels:layouts:1
+features[features_api][] = api:1
+features[page_manager_pages][] = d7pf_pp_v1
+features[panels_layout][] = d7pf_pp_v1
