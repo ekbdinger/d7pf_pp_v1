@@ -2,6 +2,7 @@ name = d7pf_pp_v1
 description = Initial take on the PP, panel page and layout
 core = 7.x
 package = D7 Upgrade
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels

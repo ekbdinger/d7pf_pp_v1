@@ -15,7 +15,7 @@ function d7pf_pp_v1_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'd7pf_pp_v1';
   $page->admin_description = 'This is a test of using Panel Pages to make a Primary page';
-  $page->path = 'pp/%pp/v1';
+  $page->path = 'pp/%pp/';
   $page->access = array(
     'logic' => 'and',
   );
@@ -46,7 +46,9 @@ function d7pf_pp_v1_default_page_manager_pages() {
       ),
     ),
   );
-  $page->conf = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
   $page->default_handlers = array();
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
